@@ -45,7 +45,6 @@ F1::
     toggle := !toggle
     SetTimer AntiAFKengage, toggle ? 500 : 0  ; start or stop the timer
 }
-
 AntiAFKengage()
 {
     static state := false

@@ -30,6 +30,7 @@
 ; GUESS WHAT THIS DOES, Hint: it opens youtube.com in brrowser
 !r:: Run "https://youtube.com"
 
+; Not working
 SetTimer CheckSteam, 100
 CheckSteam() {
     if WinActive("ahk_exe steam.exe") {
@@ -51,5 +52,30 @@ AntiAFKengage()
     Send state ? "s" : "w"
     state := !state
 }
+
+!u::
+{
+ Send "s"
+ Sleep Random( 40, 70)
+ Send "d"
+ Sleep Random( 40, 70)
+ Send "a"
+ Sleep Random( 40, 70)
+ Send "s"
+ Sleep Random( 40, 70)
+ Send "i"
+}
+
+^u::
+{
+ Send "s"
+ Sleep Random( 40, 70)
+ Send "d"
+ Sleep Random( 40, 70)
+ Send "s"
+ Sleep Random( 40, 70)
+ Send "k"
+}
+
 
 return
